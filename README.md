@@ -52,22 +52,22 @@ src/
 
 ### Installation
 
-1.  **Clone the repository:**
+1.  **Create a new project using this template:**
+
+    ```bash
+    npx create-next-app -e https://github.com/eni-fome/nextJs-enterprise-scaffold my-app
+    cd my-app
+    ```
+
+    Or clone directly:
 
     ```bash
     git clone https://github.com/eni-fome/nextJs-enterprise-scaffold.git my-app
     cd my-app
-    ```
-
-2.  **Install dependencies:**
-    This project detects your lockfile automatically. Use your preferred package manager.
-
-    ```bash
     npm install
-    # or pnpm install, yarn install, bun install
     ```
 
-3.  **Configure Environment:**
+2.  **Configure Environment:**
     This project uses a typed validation schema (`src/env.ts`) to ensure all required variables are present.
 
     ```bash
@@ -77,7 +77,7 @@ src/
     Open `.env` and configure the required keys.
     _Note: The application will throw a build-time error if required keys are missing from `src/env.ts`._
 
-4.  **Start Development Server:**
+3.  **Start Development Server:**
     ```bash
     npm run dev
     ```
