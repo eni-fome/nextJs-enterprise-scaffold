@@ -52,10 +52,10 @@ src/
 
 ### Installation
 
-1.  **Initialize the project:**
+1.  **Clone the repository:**
 
     ```bash
-    npx create-next-app -e [https://github.com/your-username/next-enterprise-scaffold](https://github.com/your-username/next-enterprise-scaffold) my-app
+    git clone https://github.com/eni-fome/nextJs-enterprise-scaffold.git my-app
     cd my-app
     ```
 
