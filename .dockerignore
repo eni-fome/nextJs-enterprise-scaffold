@@ -1,0 +1,49 @@
+# ==============================================================================
+# Docker Build Ignore
+# ==============================================================================
+# Exclude files that shouldn't be copied into the Docker build context.
+# This speeds up builds and reduces image size.
+# ==============================================================================
+
+# Dependencies (installed fresh in container)
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Version control
+.git
+.gitignore
+
+# Environment files (injected at runtime)
+.env*
+!.env.example
+
+# IDE and editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+.nyc_output
+
+# Documentation (not needed in prod image)
+*.md
+!README.md
+
+# Development files
+.husky
+plop-templates
+plopfile.js
+MASTERPLAN.md
